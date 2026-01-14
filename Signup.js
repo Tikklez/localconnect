@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import { SafeAreaView, View, ScrollView, Text, Image, TextInput, TouchableOpacity, } from "react-native";
 export default (props) => {
-	const [textInput1, onChangeTextInput1] = useState('');
-	const [textInput2, onChangeTextInput2] = useState('');
-	const [textInput3, onChangeTextInput3] = useState('');
+	const [name_ID, onChangename_ID] = useState('');
+	const [email_ID, onChangeemail_ID] = useState('');
+	const [hotel_ID, onChangehotel_ID] = useState('');
 	return (
 		<SafeAreaView 
 			style={{
@@ -16,36 +16,7 @@ export default (props) => {
 					backgroundColor: "#FFFFFF",
 					paddingTop: 21,
 				}}>
-				<View 
-					style={{
-						alignSelf: "stretch",
-						flexDirection: "row",
-						justifyContent: "space-between",
-						alignItems: "center",
-						marginBottom: 97,
-						marginHorizontal: 43,
-					}}>
-					<View 
-						style={{
-							paddingHorizontal: 31,
-						}}>
-						<Text 
-							style={{
-								color: "#000000",
-								fontSize: 17,
-							}}>
-							{"9:41"}
-						</Text>
-					</View>
-					<Image
-						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Lt5XCwnYV1/q4kqlqdk_expires_30_days.png"}} 
-						resizeMode = {"stretch"}
-						style={{
-							width: 100,
-							height: 22,
-						}}
-					/>
-				</View>
+				
 				<View 
 					style={{
 						alignSelf: "stretch",
@@ -81,8 +52,8 @@ export default (props) => {
 								</Text>
 								<TextInput
 									placeholder={"Enter your name..."}
-									value={textInput1}
-									onChangeText={onChangeTextInput1}
+									value={name_ID}
+									onChangeText={onChangename_ID}
 									style={{
 										color: "#697485",
 										fontSize: 14,
@@ -108,8 +79,8 @@ export default (props) => {
 								</Text>
 								<TextInput
 									placeholder={"Enter your email"}
-									value={textInput2}
-									onChangeText={onChangeTextInput2}
+									value={email_ID}
+									onChangeText={onChangeemail_ID}
 									style={{
 										color: "#697485",
 										fontSize: 14,
@@ -132,8 +103,8 @@ export default (props) => {
 								</Text>
 								<TextInput
 									placeholder={"Enter your Hotel ID"}
-									value={textInput3}
-									onChangeText={onChangeTextInput3}
+									value={hotel_ID}
+									onChangeText={onChangehotel_ID}
 									style={{
 										color: "#697485",
 										fontSize: 14,

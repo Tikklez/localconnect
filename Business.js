@@ -13,36 +13,7 @@ export default (props) => {
 					backgroundColor: "#FFFFFF",
 					paddingTop: 21,
 				}}>
-				<View 
-					style={{
-						alignSelf: "stretch",
-						flexDirection: "row",
-						justifyContent: "space-between",
-						alignItems: "center",
-						marginBottom: 23,
-						marginHorizontal: 43,
-					}}>
-					<View 
-						style={{
-							paddingHorizontal: 31,
-						}}>
-						<Text 
-							style={{
-								color: "#000000",
-								fontSize: 17,
-							}}>
-							{"9:41"}
-						</Text>
-					</View>
-					<Image
-						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/Lt5XCwnYV1/x0l9kdbc_expires_30_days.png"}} 
-						resizeMode = {"stretch"}
-						style={{
-							width: 100,
-							height: 22,
-						}}
-					/>
-				</View>
+				
 				<View 
 					style={{
 						alignSelf: "stretch",

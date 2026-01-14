@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import { SafeAreaView, View, ScrollView, Image, Text, TextInput, TouchableOpacity, } from "react-native";
 export default (props) => {
-	const [textInput1, onChangeTextInput1] = useState('');
-	const [textInput2, onChangeTextInput2] = useState('');
+	const [name_ID, onChangename_ID] = useState('');
+	const [email_ID, onChangeemail_ID] = useState('');
 	return (
 		<SafeAreaView 
 			style={{
@@ -55,8 +55,8 @@ export default (props) => {
 								</Text>
 								<TextInput
 									placeholder={"James Ayomide"}
-									value={textInput1}
-									onChangeText={onChangeTextInput1}
+									value={name_ID}
+									onChangeText={onChangename_ID}
 									style={{
 										color: "#697485",
 										fontSize: 12,
@@ -79,8 +79,8 @@ export default (props) => {
 								</Text>
 								<TextInput
 									placeholder={"jamesayomide@gmail.com"}
-									value={textInput2}
-									onChangeText={onChangeTextInput2}
+									value={email_ID}
+									onChangeText={onChangeemail_ID}
 									style={{
 										color: "#697485",
 										fontSize: 12,
